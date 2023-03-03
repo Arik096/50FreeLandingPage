@@ -1,0 +1,733 @@
+/* Description: Master CSS file */
+
+/*****************************************
+Table Of Contents:
+- General Styles
+- Header
+- Media Queries
+******************************************/
+
+/*****************************************
+Colors:
+- Buttons - blue #4baed0
+******************************************/
+
+
+/**************************/
+/*     General Styles     */
+/**************************/
+body,
+html {
+    width: 100%;
+	height: 100%;
+}
+
+body, p {
+	color: #ffffff; 
+	font: 400 1rem/1.75rem "Open Sans", sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 3.75rem;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 3rem;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.375rem;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+h5 {
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 1.625rem;
+}
+
+h6 {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.p-large {
+	font-size: 1.25rem;
+	line-height: 2.125rem;
+}
+
+.p-small {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+.p-heading {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.testimonial-text {
+	font-style: italic;
+}
+
+.testimonial-author {
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.625rem;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a.pink {
+	color: #ff5784;
+}
+
+.btn-solid-reg {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #4baed0;
+	border-radius: 2rem;
+	background-color: #4baed0;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-reg:hover {
+	border: 0.125rem solid #4baed0;
+	background-color: transparent;
+	color: #4baed0;
+	text-decoration: none;
+}
+
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.5rem 2.375rem 1.5rem 2.375rem;
+	border: 0.125rem solid #4baed0;
+	border-radius: 2rem;
+	background-color: #4baed0;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg:hover {
+	border: 0.125rem solid #4baed0;
+	background-color: transparent;
+	color: #4baed0;
+	text-decoration: none;
+}
+
+.btn-outline-reg {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #ffffff;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+	border: 0.125rem solid #ffffff;
+	background-color: #ffffff;
+	color: #333333;
+	text-decoration: none;
+}
+
+.btn-outline-lg {
+	display: inline-block;
+	padding: 1.5rem 2.375rem 1.5rem 2.375rem;
+	border: 0.125rem solid #ffffff;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-lg:hover {
+	border: 0.125rem solid #ffffff;
+	background-color: #ffffff;
+	color: #333333;
+	text-decoration: none;
+}
+
+.btn-outline-sm {
+	display: inline-block;
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	border: 0.125rem solid #ffffff;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+	border: 0.125rem solid #ffffff;
+	background-color: #ffffff;
+	color: #333333;
+	text-decoration: none;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 1.25rem;
+}
+
+.label-control {
+	position: absolute;
+	top: 0.87rem;
+	left: 1.375rem;
+	color: #777;
+	opacity: 1;
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	cursor: text;
+	transition: all 0.2s ease;
+}
+
+.form-control-input:focus + .label-control,
+.form-control-input.notEmpty + .label-control,
+.form-control-textarea:focus + .label-control,
+.form-control-textarea.notEmpty + .label-control {
+	top: 0.125rem;
+	opacity: 1;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.form-control-input,
+.form-control-select {
+	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	width: 100%;
+	padding-top: 1.0625rem;
+	padding-bottom: 0.0625rem;
+	padding-left: 1.3125rem;
+	border: 1px solid #c4d8dc;
+	border-radius: 0.25rem;
+	background-color: #ffffff;
+	color: #777;
+	font-size: 0.875rem;
+	line-height: 1.875rem;
+	transition: all 0.2s;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+
+.form-control-select {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	height: 3rem;
+}
+
+select {
+    /* you should keep these first rules in place to maintain cross-browser behavior */
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('../images/down-arrow.png');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+.form-control-textarea {
+	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	width: 100%;
+	height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	padding-top: 1.25rem;
+	padding-left: 1.3125rem;
+	border: 1px solid #c4d8dc;
+	border-radius: 0.25rem;
+	background-color: #ffffff;
+	color: #777;
+	font-size: 0.875rem;
+	line-height: 1.75rem;
+	transition: all 0.2s;
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+	border: 1px solid #a1a1a1;
+	outline: none; /* Removes blue border on focus */
+}
+
+.form-control-input:hover,
+.form-control-select:hover,
+.form-control-textarea:hover {
+	border: 1px solid #a1a1a1;
+}
+
+input[type='checkbox'] {
+	vertical-align: -10%;
+	margin-right: 0.5rem;
+}
+
+.form-control-submit-button {
+	display: inline-block;
+	width: 100%;
+	height: 3.125rem;
+	border: 0.125rem solid #4baed0;
+	border-radius: 1.5rem;
+	background-color: #4baed0;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 0.875rem;
+	line-height: 0;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.form-control-submit-button:hover {
+	border: 0.125rem solid #4baed0;
+	background-color: transparent;
+	color: #4baed0;
+}
+
+
+/* Fade-move Animation For Details Lightbox - Magnific Popup */
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	transition: all 0.2s ease-out;
+	-webkit-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+}
+
+/* dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+	transition: opacity 0.2s ease-out;
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/* end of fade-move animation for details lightbox - magnific popup */
+
+/* Fade Animation For Image Lightbox - Magnific Popup */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 0.6s;
+	animation: fadeIn 0.6s;
+}
+
+@-webkit-keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.fadeOut {
+	-webkit-animation: fadeOut 0.8s;
+	animation: fadeOut 0.8s;
+}
+/* end of fade animation for details lightbox - magnific popup */
+
+
+/******************/
+/*     Header     */
+/******************/
+.header {
+	position: relative;
+	min-height: 100%;
+	text-align: center;
+}
+
+.header .logo-and-links {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.header .logo-image {
+	width: 7.125rem;
+	height: 2.75rem;
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.header .logo-text {
+	display: inline-block;
+	margin-top: 2.5rem;
+	margin-bottom: 1.75rem;
+	color: #fff;
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1rem;
+	text-decoration: none;
+}
+
+.header .contact-container {
+	margin-bottom: 3.5rem;
+}
+
+.header .contact-container .list-unstyled li {
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
+
+.header .contact-container .list-unstyled a {
+	text-decoration: none;
+}
+
+.header .contact-container .list-unstyled .fas {
+	margin-right: 0.5rem;
+	color: #ffffff;
+}
+
+header .first-pane {
+	background-color: #4baed0;
+}
+
+header .first-pane-content {
+	max-width: 33.75rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 12rem 1rem 3rem 1rem;
+}
+
+.header .countdown {
+	margin-bottom: 1rem;
+}
+
+.header .countdown #clock .counter-number {
+	display: inline-block;
+	width: 6.5rem;
+	height: 6.5rem;
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+	margin-left: 0.5rem;
+	padding-top: 2rem;
+	border: 0.125rem solid #ffffff;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 1.25rem;
+	text-align: center;
+}
+
+.header .countdown #clock .counter-number .timer-text {
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.header h1 {
+	margin-bottom: 0.75rem;
+	font-size: 2.5rem;
+	line-height: 3.375rem;
+}
+
+.header h1 #js-rotating {
+	color: #ffffff;	
+}
+
+.header .second-pane {
+	background-color: #343f4b;
+}
+
+.header .second-pane-content {
+	max-width: 33.75rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 5rem 1rem 7rem 1rem;
+}
+
+.header .social-container {
+	position: absolute;
+	right: 0;
+	bottom: 1rem;
+	left: 0;
+}
+
+.header .fa-stack {
+	width: 2em;
+	margin-bottom: 0.75rem;
+	margin-right: 0.375rem;
+	font-size: 1.25rem;
+}
+
+.header .social-container .fa-stack:last-child {
+	margin-right: 0;
+}
+
+.header .fa-stack .fa-stack-1x {
+    color: #fff;
+	transition: all 0.2s ease;
+}
+
+.header .fa-stack .fa-stack-2x {
+	color: #46525f;
+	transition: all 0.2s ease;
+}
+
+.header .fa-stack:hover .fa-stack-2x {
+	color: #4baed0;
+}
+
+
+/*************************/
+/*     Media Queries     */
+/*************************/	
+/* Min-width 768px */
+@media (min-width: 768px) {
+
+	/* Header */
+	.header .logo-image {
+		position: absolute;
+		top: 1.875rem;
+		left: 1rem;
+		margin-top: 0;
+	}
+	
+	.header .logo-text {
+		position: absolute;
+		top: 2.875rem;
+		left: 2rem;
+		margin-top: 0;
+	}
+
+	.header .contact-container {
+		position: absolute;
+		top: 2.625rem;
+		right: 2rem;
+		margin-bottom: 0;
+	}
+
+	.header .contact-container .list-unstyled li {
+		margin-right: 1rem;
+		margin-left: 0;
+	}
+
+	.header .contact-container .list-unstyled li:last-of-type {
+		margin-right: 0;
+	}
+
+	.header .first-pane-content {
+		width: 45rem;
+		max-width: 100%;
+		padding-top: 9rem;
+	}
+
+	.header .second-pane-content {
+		width: 45rem;
+		max-width: 100%;
+	}
+	/* end of header */
+}
+/* end of min-width 768px */
+
+
+/* Min-width 992px */
+@media (min-width: 992px) {
+	
+	/* General Styles */
+	.p-heading {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		line-height: 4.5rem;
+	}
+	
+	h2 {
+		font-size: 2.5rem;
+		line-height: 3.25rem;
+	}
+	/* end of general styles */
+
+	
+	/* Header */
+	.header .countdown #clock .counter-number {
+		margin-right: 0.25rem;
+		margin-left: 0.25rem;
+	}
+
+	.header .countdown #clock .counter-number:first-child {
+		margin-left: 0;
+	}
+	
+	.header .countdown #clock .counter-number:last-child {
+		margin-right: 0;
+	}
+
+	.header .social-container {
+		text-align: center;
+	}
+	/* end of header */
+}
+/* end of min-width 992px */
+
+
+/* Min-width 1200px */
+@media (min-width: 1200px) {
+
+	/* Header */
+	.header {
+		height: 100%;
+		min-height: 50rem;
+		text-align: left;
+	}
+
+	.header .logo-image,
+	.header .logo-text {
+		left: 2rem;
+	}
+
+	.header .first-pane,
+	.header .second-pane {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		height: 100%;
+		padding: 0;
+	}
+
+	.header .first-pane {
+		align-items: flex-end;
+	}
+	
+	.header .first-pane-content {
+		width: 30.625rem;
+		margin-right: 6rem;
+		padding: 0;
+	}
+	
+	.header .countdown #clock .counter-number {
+		width: 7.25rem;
+		height: 7.25rem;
+		padding-top: 2.375rem;
+		font-size: 2.5rem;
+	}
+	
+	.header h1 {
+		font-size: 3.25rem;
+		line-height: 4.125rem;
+	}
+	
+	.header p {
+		width: 100%;
+		margin-right: auto;
+		margin-left: 0;
+	}
+	
+	.header .second-pane {
+		align-items: flex-start;
+	}
+	
+	.header .second-pane-content {
+		width: 30.625rem;
+		margin-left: 6rem;
+		padding: 0;
+	}
+
+	.header .form-control-textarea {
+		height: 11rem; 
+	}
+	/* end of header */
+}
+/* end of min-width 1200px */

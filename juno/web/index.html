@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+        <!-- Webpage Title -->
+        <title>Webpage Title</title>
+        
+        <!-- Styles -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- Favicon  -->
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+                
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
+
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#pricing">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DROP</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item page-scroll" href="article.html">ARTICLE DETAILS</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="terms.html">TERMS CONDITIONS</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="privacy.html">PRIVACY POLICY</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <span class="nav-item social-icons">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </span>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+
+
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1 class="h1-large">LOREM IPSUM DOLOR SIT AMET</h1>
+                            <p class="p-large">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore etdol menes</p>
+                            <a class="btn-outline-lg page-scroll" href="#services">DISCOVER</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+
+                        <!-- Get Quote Form -->
+                        <div class="form-container">
+                            <form id="getQuoteForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="gname" required>
+                                    <label class="label-control" for="gname">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control-input" id="gemail" required>
+                                    <label class="label-control" for="gemail">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="gphone" required>
+                                    <label class="label-control" for="gphone">Phone</label>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control-select" id="gselect" required>
+                                        <option class="select-option" value="" disabled selected>Select Package</option>
+                                        <option class="select-option" value="Basic">Basic</option>
+                                        <option class="select-option" value="Complete">Complete</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group checkbox">
+                                    <input type="checkbox" id="gterms" value="Agreed-to-Terms" required>Malesuada nunc vel risus <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control-submit-button">GET QUOTE</button>
+                                </div>
+                            </form>
+                        </div> <!-- end of form-container -->
+                        <!-- end of get quote form -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+
+
+        <!-- Statement -->
+        <div class="basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <div class="element">
+                                <img class="icon" src="images/statement-icon-1.svg" alt="alternative">
+                                <p class="title">Planning</p>
+                            </div> <!-- end of element -->
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="element">
+                                <img class="icon" src="images/statement-icon-2.svg" alt="alternative">
+                                <p class="title">Design</p>
+                            </div> <!-- end of element -->
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="element">
+                                <img class="icon" src="images/statement-icon-3.svg" alt="alternative">
+                                <p class="title">Execution</p>
+                            </div> <!-- end of element -->
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-right"></i>
+                            <div class="element">
+                                <img class="icon" src="images/statement-icon-4.svg" alt="alternative">
+                                <p class="title">Maintenance</p>
+                            </div> <!-- end of element -->
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="testimonial-text p-large">”Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla purus in”</p>
+                        <p class="testimonial-author">Lorem Ipsum - Company CEO</p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of statement -->
+
+
+        <!-- Services -->
+        <div id="services" class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>SERVICES</h2>
+                        <p class="p-heading">Elementum nisi quis mauris a diam maecenas sed enim. Amet commodo nulla facilisi nullam vehicula ipsum a morbi tristique senectus et netus et amet</p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6 first">
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="image-container">
+                                <img src="images/services-1.jpg" alt="alternative">
+                            </div> <!-- end of image-container -->
+                            <div class="text-container">
+                                <h4>Lobortis Feugiat</h4>
+                                <p>Nisl purus in mollis nunc sed id semper risus in dictum non consectetur a erat nam et tortor consequat id porta nibh rem</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of div -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="image-container">
+                                <img src="images/services-2.jpg" alt="alternative">
+                            </div> <!-- end of image-container -->
+                            <div class="text-container">
+                                <h4>Vivamus Augue</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of div -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="image-container">
+                                <img src="images/services-3.jpg" alt="alternative">
+                            </div> <!-- end of image-container -->
+                            <div class="text-container">
+                                <h4>Egetro Arcules</h4>
+                                <p>Senectus et netus et malesuada fameser malesuada nunc vel risus commodo. Eget egestas purus viverra accumsan in nisl nisi</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of div -->
+                        <!-- end of service -->
+
+                    </div> <!-- end of col-->
+                    <div class="col-lg-6 second">
+                        
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="image-container">
+                                <img src="images/services-4.jpg" alt="alternative">
+                            </div> <!-- end of image-container -->
+                            <div class="text-container">
+                                <h4>Amet Aliquam</h4>
+                                <p>Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla purus in mollis nunc sed id semper</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of div -->
+                        <!-- end of service -->
+
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="image-container">
+                                <img src="images/services-5.jpg" alt="alternative">
+                            </div> <!-- end of image-container -->
+                            <div class="text-container">
+                                <h4>Diam Maecenas</h4>
+                                <p>Aenean euismod elementum nisi quis mauris a diam maecenas sed enim amet commodo nulla facilisi nullam vehicula ipsum am tris</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of div -->
+                        <!-- end of service -->
+                        
+                        <!-- Service -->
+                        <div class="service-container">
+                            <div class="image-container">
+                                <img src="images/services-6.jpg" alt="alternative">
+                            </div> <!-- end of image-container -->
+                            <div class="text-container">
+                                <h4>Ultricies Mieget</h4>
+                                <p>Lobortis feugiat vivamus at augue eget arcu amet aliquam id diam maecenas ultricies mi eget. Nisl purus in mollis nunc sed id sem</p>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of div -->
+                        <!-- end of service -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-2 -->
+        <!-- end of services -->
+
+
+        <!-- Description -->
+        <div class="slider-1 bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">      
+                        
+                        <!-- Text Slider -->
+                        <div class="slider-container">
+                            <div class="swiper-container text-slider">
+                                <div class="swiper-wrapper">
+                                    
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="image-container">
+                                                    <img class="img-fluid" src="images/description-1.jpg" alt="alternative">
+                                                </div> <!-- end of image-container -->
+                                            </div> <!-- end of col -->
+                                            <div class="col-lg-6">
+                                                <div class="text-container">
+                                                    <h3>Lobortis Feugiat</h3>
+                                                    <p>In dictum non consectetur a erat nam. Et tortor consequat id porta nibh venenatis. Rhoncus mattis rhoncus urna neque viverra. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices</p>
+                                                    <a class="btn-outline-reg" href="article.html">DETAILS</a>
+                                                </div> <!-- end of text-container -->
+                                            </div> <!-- end of col -->
+                                        </div> <!-- end of row -->
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="image-container">
+                                                    <img class="img-fluid" src="images/description-2.jpg" alt="alternative">
+                                                </div> <!-- end of image-container -->
+                                            </div> <!-- end of col -->
+                                            <div class="col-lg-6">
+                                                <div class="text-container">
+                                                    <h3>Vivamus Augue</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames. Male vel risus commodo</p>
+                                                    <a class="btn-outline-reg" href="article.html">DETAILS</a>
+                                                </div> <!-- end of text-container -->
+                                            </div> <!-- end of col -->
+                                        </div> <!-- end of row -->
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="image-container">
+                                                    <img class="img-fluid" src="images/description-3.jpg" alt="alternative">
+                                                </div> <!-- end of image-container -->
+                                            </div> <!-- end of col -->
+                                            <div class="col-lg-6">
+                                                <div class="text-container">
+                                                    <h3>Egetro Arcules</h3>
+                                                    <p>Eget egestas purus viverra accumsan in nisl nisi. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper aenean</p>
+                                                    <a class="btn-outline-reg" href="article.html">DETAILS</a>
+                                                </div> <!-- end of text-container -->
+                                            </div> <!-- end of col -->
+                                        </div> <!-- end of row -->
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+
+                                </div> <!-- end of swiper-wrapper -->
+                                
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- end of add arrows -->
+
+                            </div> <!-- end of swiper-container -->
+                        </div> <!-- end of slider-container -->
+                        <!-- end of text slider -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-1 -->
+        <!-- end of description -->
+
+
+        <!-- Details 1 -->
+        <div id="details" class="accordion">
+            <div class="area-1">
+            </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+                    
+                    <!-- Accordion -->
+                    <div class="accordion-container" id="accordionOne">
+                        <div class="item">
+                            <div id="headingOne">
+                                <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
+                                    <span class="circle-numbering">1</span><span class="accordion-title">Euismod Elementum Bisi Quis Rem</span>
+                                </span>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                                <div class="accordion-body">
+                                    Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi vehicula ipsum a. Morbi tristique senectus et netu
+                                </div>
+                            </div>
+                        </div> <!-- end of item -->
+                    
+                        <div class="item">
+                            <div id="headingTwo">
+                                <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
+                                    <span class="circle-numbering">2</span><span class="accordion-title">Aenean Euismod Elementum Nisi</span>
+                                </span>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                                <div class="accordion-body">
+                                    Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi vehicula ipsum a. Morbi tristique senectus et netu
+                                </div>
+                            </div>
+                        </div> <!-- end of item -->
+                    
+                        <div class="item">
+                            <div id="headingThree">
+                                <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
+                                    <span class="circle-numbering">3</span><span class="accordion-title">Mauris A Diam Maecenas Sed Enim</span>
+                                </span>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
+                                <div class="accordion-body">
+                                    Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi vehicula ipsum a. Morbi tristique senectus et netu
+                                </div>
+                            </div>
+                        </div> <!-- end of item -->
+
+                        <div class="item">
+                            <div id="headingFour">
+                                <span class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="button">
+                                    <span class="circle-numbering">4</span><span class="accordion-title">Morbi Tristique Senectus Et Netus</span>
+                                </span>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionOne">
+                                <div class="accordion-body">
+                                    Aenean euismod elementum nisi quis. Mauris a diam maecenas sed enim. Amet commodo nulla facilisi vehicula ipsum a. Morbi tristique senectus et netu
+                                </div>
+                            </div>
+                        </div> <!-- end of item -->
+                    </div> <!-- end of accordion-container -->
+                    <!-- end of accordion -->
+
+            </div> <!-- end of area-2 -->
+        </div> <!-- end of accordion -->
+        <!-- end of details 1 -->
+
+
+        <!-- Details 2 -->
+        <div class="tabs">
+            <div class="area-1">
+                <div class="tabs-container">
+                    
+                    <!-- Tabs Links -->
+                    <ul class="nav nav-tabs" id="siteTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">BUSINESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">EXPERTISE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">QUALITY</a>
+                        </li>
+                    </ul>
+                    <!-- end of tabs links -->
+                    
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="siteTabsContent">
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <h4>Lobortis Feugiat Vivamus Ate</h4>
+                            <p>Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies mi <a class="orange page-scroll" href="#pricing">Pricing</a> eget nisl purus in mollis nunc sed id semper risus. In dictum non</p>
+                            
+                            <!-- Progress Bars -->
+                            <div class="progress-container">
+                                <div class="title">Business Development 100%</div>
+                                <div class="progress">
+                                    <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="title">Recruiting Services 90%</div>
+                                <div class="progress">
+                                    <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="title">HR Management 75%</div>
+                                <div class="progress">
+                                    <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div> <!-- end of progress-container -->
+                            <!-- end of progress bars -->
+                            
+                        </div> <!-- end of tab-pane --> 
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                            <ul class="list-unstyled li-space-lg first">
+                                <li class="media">
+                                    <div class="media-bullet">1</div>
+                                    <div class="media-body"><strong>Lorem ipsum dolor</strong> sit aliqua senectus et netus et malesuada fames malesuada nunc</div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-bullet">2</div>
+                                    <div class="media-body"><strong>Amet consectetur</strong> adi risus commodo eget egestas purus viverra</div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-bullet">3</div>
+                                    <div class="media-body"><strong>Elit sed do rem</strong> in nisl nisi pellentesque elit ullamcorper dignissim cras tincidunt</div>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled li-space-lg last">
+                                <li class="media">
+                                    <div class="media-bullet">4</div>
+                                    <div class="media-body"><strong>Eiusmod tempor</strong> et leo duis ut diam quam nulla. Purus in mollis nunc sed id semper</div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-bullet">5</div>
+                                    <div class="media-body"><strong>Unt ut labore et</strong> aenean euismod elementum nisi quis</div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-bullet">6</div>
+                                    <div class="media-body"><strong>Dolore magna</strong> mauris a diam maecenas sed enim amet commodo nulla facilisi nullam</div>
+                                </li>
+                            </ul>
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                        <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                            <p><strong>Morbi tristique sene</strong> et netus et. Lobortis feugiat vivamus at augue eget arcu. Amet aliquam id diam maecenas ultricies mi eget Nisl purus in mollis <a class="orange" href="#your-link">sed id semper risus</a></p>
+                            <p><strong>In dictum non conse</strong> consectetur a erat nam. Et tortor consequat id porta nibh venenatis rempre sena <a class="orange" href="#your-link">rhoncus mattis</a></p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Rhoncus mattis rhoncus urna neque viverra bibendum ut tri</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">Amet aliquam id diam maecenas ultricies mi eget nisl</div>
+                                </li>
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">In dictum non consectetur a erat nam. Et tortor consequat id</div>
+                                </li>
+                            </ul>
+                            <a class="btn-solid-reg page-scroll" href="#pricing">PRICING</a><a class="btn-outline-reg page-scroll" href="#details">DETAILS</a>
+                        </div> <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                    </div> <!-- end of tab-content -->
+                    <!-- end of tabs content -->
+
+                </div> <!-- end of tabs-container -->
+            </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+        </div> <!-- end of tabs -->
+        <!-- end of details 2 -->
+
+
+        <!-- Pricing -->
+        <div id="pricing" class="cards-1 bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>PRICING</h2>
+                        <hr class="hr-heading">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="text-container">
+                            <h3>Rhoncus Mattis Ner</h3>
+                            <p>Rhoncus mattis rhoncus urna neque viverra bibendum ut tristique et egestas quis ipsum suspendisse ultrices Porta nibh venenatis cras sed felis</p>
+                            <p>Porta nibh venenatis cras sed felis eget velite sed odio morbi quis commodo.</p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-8">
+                        
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="price"><span class="currency">$</span>19</div>
+                            <div class="card-body">
+                                <h3 class="card-title">BASIC</h3>
+                                <p>Nisl vel pretium lectus quam sagittis orci a scelerisque purus semperne gravida neque convallis rempa</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Aenean sed adipiscing aliquam</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Morbi accumsan lacus vel facilis</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Volutpat est velit platea dictu</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a class="btn-outline-reg page-scroll" href="#header">GET QUOTE</a>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="price"><span class="currency">$</span>29</div>
+                            <div class="card-body">
+                                <h3 class="card-title">COMPLETE</h3>
+                                <p>Nisl vel pretium lectus quam sagittis orci a scelerisque purus semperne gravida neque convallis rempa</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Aenean sed adipiscing aliquam</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Morbi accumsan lacus vel facilis</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Volutpat est velit platea dictu</div>
+                                    </li>   
+                                </ul>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a class="btn-outline-reg page-scroll" href="#header">GET QUOTE</a>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+        
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of cards-1 -->
+        <!-- end of pricing -->
+
+
+        <!-- Invitation -->
+        <div class="basic-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>Vestibulum Rhoncus Est Pellentesque Elit Ullamcorper Dignissim Velit Egestas Dui Id Ornare Arcu Odio Ut Sem Ultrices Volupta</h5>
+                        <a class="btn-outline-lg page-scroll" href="#getQuoteForm">GET QUOTE</a>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-3 -->
+        <!-- end of invitation -->
+
+
+        <!-- Projects -->
+        <div id="projects" class="filter bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>PROJECTS</h2>
+                        <p class="p-heading">Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam nero veripse</p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Filter -->
+                        <div class="button-group filters-button-group">
+                            <a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
+                            <a class="button" data-filter=".design"><span>DESIGN</span></a>
+                            <a class="button" data-filter=".development"><span>DEVELOPMENT</span></a>
+                            <a class="button" data-filter=".marketing"><span>MARKETING</span></a>
+                            <a class="button" data-filter=".seo"><span>SEO</span></a>
+                        </div> <!-- end of button group -->
+                        <div class="grid">
+                            <div class="element-item development">
+                                <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Online Bank</span></div><img src="images/project-1.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item development">
+                                <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Classic Industry</span></div><img src="images/project-2.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item design development marketing">
+                                <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>BoomBap Audio</span></div><img src="images/project-3.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item design development marketing">
+                                <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Van Moose</span></div><img src="images/project-4.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item design development marketing seo">
+                                <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Joy Moments</span></div><img src="images/project-5.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item design marketing seo">
+                                <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Spark Events</span></div><img src="images/project-6.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item design marketing">
+                                <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Casual Wear</span></div><img src="images/project-7.jpg" alt="alternative"></a>
+                            </div>
+                            <div class="element-item design marketing">
+                                <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Zazoo Apps</span></div><img src="images/project-8.jpg" alt="alternative"></a>
+                            </div>
+                        </div> <!-- end of grid -->
+                        <!-- end of filter -->
+                        
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of filter -->
+        <!-- end of projects -->
+
+
+        <!-- Project Lightboxes -->
+        <!-- Lightbox -->
+        <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-1.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Online Bank</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-2.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Classic Industry</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-3.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>BoomBap Audio</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-4.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Van Moose</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-5.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Joy Moments</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-6.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Spark Events</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-7.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Casual Wear</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+
+        <!-- Lightbox -->
+        <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/project-lightbox-8.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Zazoo Apps</h3>
+                    <hr>
+                    <p>Sed viverra tellus in hac habitasse. Auctor neque vitae tempus quam pellentesque. Eget duis at tellus at urna condimentum mattis. Bibendum at varius vel pharetra vel turpis nunc eget. Ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+                    <div class="text-container">
+                        <p class="testimonial-text">Accumsan sit amet nulla facilisi morbi tempus vulputate odio ut enim blandit volutpat maecenas volutpat ac tincidunt nepi</p>
+                        <div class="testimonial-author">General Manager</div>
+                    </div> <!-- end of text-container -->
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#getQuoteForm">GET QUOTE</a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of lightbox-basic -->
+        <!-- end of lightbox -->
+        <!-- end of project lightboxes -->
+
+
+        <!-- Testimonials -->
+        <div class="slider-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>TESTIMONIALS</h2>
+                        <hr class="hr-heading">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Card Slider -->
+                        <div class="slider-container">
+                            <div class="swiper-container card-slider">
+                                <div class="swiper-wrapper">
+                                    
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Vitae semper quis lectus nulla at. Ipsum nunc aliquet bibendum enim. Eget velit aliquet sagittis id consectetur</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Designer</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Vitae semper quis lectus nulla at. Ipsum nunc aliquet bibendum enim. Eget velit aliquet sagittis id consectetur</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Designer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Vitae semper quis lectus nulla at. Ipsum nunc aliquet bibendum enim. Eget velit aliquet sagittis id consectetur</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Designer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Vitae semper quis lectus nulla at. Ipsum nunc aliquet bibendum enim. Eget velit aliquet sagittis id consectetur</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Designer</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Vitae semper quis lectus nulla at. Ipsum nunc aliquet bibendum enim. Eget velit aliquet sagittis id consectetur</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Designer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+            
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
+                                            <div class="card-body">
+                                                <p class="testimonial-text">Vitae semper quis lectus nulla at. Ipsum nunc aliquet bibendum enim. Eget velit aliquet sagittis id consectetur</p>
+                                                <p class="testimonial-author">Lorem Ipsum - Designer</p>
+                                            </div>
+                                        </div>        
+                                    </div> <!-- end of swiper-slide -->
+                                    <!-- end of slide -->
+                                
+                                </div> <!-- end of swiper-wrapper -->
+            
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <!-- end of add arrows -->
+            
+                            </div> <!-- end of swiper-container -->
+                        </div> <!-- end of slider-container -->
+                        <!-- end of card slider -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of slider-2 -->
+        <!-- end of testimonials -->
+
+
+        <!-- About -->
+        <div class="basic-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>ABOUT</h2>
+                        <p class="p-heading">Sapien et ligula ullamcorper malesuada proin libero. Enim ut sem viverra aliquet. Ut aliquam purus sit amet luctus venenatis lectus magna rempus lion</p>
+                    </div> <!-- end of div -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/about.jpg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h4>Accumsan Sit Amet Nulla Facilisi Morb</h4>
+                            <p>Aliquam sem fringilla ut morbi. Accumsan lacus vel facilisis volutpat est velit. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Velit egestas dui id ornare</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li><strong>2012 - 2014</strong> Sem fringilla ut morbi accumsan lacus vel faci</li>
+                                <li><strong>2014 - 2017</strong> San lacus vel facilisis volutpat est velit platea</li>
+                                <li><strong>2017 - 2021</strong> Volutpat est velit platea dictumst vestibulum rhon</li>
+                            </ul>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-4 -->
+        <!-- end of about -->
+
+
+        <!-- Statistics -->
+        <div class="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <!-- Counter -->
+                        <div id="counter">
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="231">1</div>
+                                <p class="counter-info">Egestas Quis</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="85">1</div>
+                                <p class="counter-info">Ipsum Suspendi</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="59">1</div>
+                                <p class="counter-info">Ultrices Gravi</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="127">1</div>
+                                <p class="counter-info">Dictum Fusce</p>
+                            </div>
+                            <div class="cell">
+                                <div class="counter-value number-count" data-count="76">1</div>
+                                <p class="counter-info">Sedro Viverra</p>
+                            </div>
+                        </div>
+                        <!-- end of counter -->
+                        
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of counter -->
+        <!-- end of statistics -->
+
+
+        <!-- Team -->
+        <div class="basic-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>OUR TEAM</h2>
+                        <hr class="hr-heading">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="images/team-member-1.jpg" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Lorem Ipsum</h6>
+                                <p>Business Developer</p>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="images/team-member-2.jpg" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Lorem Ipsum</h6>
+                                <p>Software Engineer</p>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="images/team-member-3.jpg" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Lorem Ipsum</h6>
+                                <p>Online Marketer</p>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="img-fluid" src="images/team-member-4.jpg" alt="alternative">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Lorem Ipsum</h6>
+                                <p>Product Manager</p>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+        
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-5 -->
+        <!-- end of team -->
+
+
+        <!-- Contact -->
+        <div id="contact" class="form-1 bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>CONTACT</h2>
+                        <p class="p-heading">Tellus in hac habitasse auctor neque vitae tempus quam pellentesque</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li><i class="fas fa-map-marker-alt"></i> &nbsp;40 Lorem ipsum, Vestibulum, VS 1234, GR</li>
+                            <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00123456789">+12 345 6789</a></li>
+                            <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@name.com">contact@name.com</a></li>
+                        </ul>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606" allowfullscreen></iframe>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        
+                        <!-- Contact Form -->
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cname" required>
+                                <label class="label-control" for="cname">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="cemail" required>
+                                <label class="label-control" for="cemail">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                                <label class="label-control" for="cmessage">Message</label>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Accumsan sit amet nulla facilisi morbi tempus <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms Conditions</a> 
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                            </div>
+                        </form>
+                        <!-- end of contact form -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of form-1 -->
+        <!-- end of contact -->
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>Lorem Ipsum</h6>
+                            <p class="p-small">Accumsan sit amet nulla facilisi morbi tempus. Vulputate odio ut enim blandit volutpat maecenas volutpat. Ac tincidunt vitae semper quis</p>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
+                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
+                                <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#services">Services</a>, <a class="page-scroll" href="#details">Details</a>, <a class="page-scroll" href="#pricing">Pricing</a></li>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <p class="p-small">Ipsum nunc aliquet bibendum eni <a href="mailto:contact@name.com"><strong>contact@name.com</strong></a></p>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->  
+        <!-- end of footer -->
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © Some name</p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright --> 
+        <!-- end of copyright -->
+        
+            
+        <!-- Scripts -->
+        <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    </body>
+</html>
